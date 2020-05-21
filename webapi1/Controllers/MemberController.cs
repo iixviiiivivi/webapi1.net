@@ -78,14 +78,14 @@ namespace webapi1.Controllers
         [Route("api/exception")]
         public HttpResponseMessage GetExceptionTest()
         {
-            throw new Exception("GetExceptionTest throws an exception");
+            throw new Exception("GetExceptionTest action throws an exception");
         }
 
         // Exception test at global scope
         [Route("api/globalexception")]
         public HttpResponseMessage GetGlobalExceptionTest()
         {
-            throw new Exception("GetGlobalExceptionTest throws an exception");
+            throw new Exception("GetGlobalExceptionTest action throws an exception");
         }
     }
 }

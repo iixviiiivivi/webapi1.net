@@ -10,15 +10,16 @@ namespace webapi1.Filters
 {
     public class ActionInfoAttribute : ActionFilterAttribute
     {
+        private string actionName;
+
         public override void OnActionExecuting(HttpActionContext actionContext)
         {
-            string actionName = actionContext.ActionDescriptor.ActionName;
+            actionName = actionContext.ActionDescriptor.ActionName;
             Trace.WriteLine($"{actionName} is starting...");
         }
 
         public override void OnActionExecuted(HttpActionExecutedContext actionExecutedContext)
         {
-            string actionName = actionExecutedContext.ActionContext.ActionDescriptor.ActionName;
             Trace.WriteLine($"{actionName} ended...");
         }
 
