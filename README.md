@@ -6,5 +6,5 @@ C# / .Net / .Net Framework / Web API / Web API1
 * Using get, post, put, and delete keywords as action name for routing and request types
 * Using DAO with LINQ query to interact with database and controller
 * Implementing action and exception filters at action and global scope
-> Registering filters in WebApiConfig.cs
+1. Registering filters in WebApiConfig.cs
 * Remove XmlFormatter in WebApiConfig.cs to return only json formatted data to client
